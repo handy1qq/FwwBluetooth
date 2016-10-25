@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="iFt-Ha-R5Q">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="gIq-SY-Yep">
+            <objects>
+                <viewController id="iFt-Ha-R5Q" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Rg-O7-jt7"/>
+                        <viewControllerLayoutGuide type="bottom" id="tzB-RI-16a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JlO-og-Q6P">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="17(1).jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QDg-Ck-hY2">
+                                <rect key="frame" x="3" y="0.0" width="317" height="568"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="连接蓝牙" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FgA-a4-DVq">
+                                <rect key="frame" x="124" y="223" width="80" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="66(1).jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gWX-p1-lk0">
+                                <rect key="frame" x="30" y="0.0" width="256" height="81"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7R-lH-TrX">
+                                <rect key="frame" x="51" y="28" width="216" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDC-k3-0zF">
+                                <rect key="frame" x="30" y="165" width="59" height="50"/>
+                                <state key="normal" image="312.png"/>
+                                <connections>
+                                    <action selector="scan:" destination="iFt-Ha-R5Q" eventType="touchUpInside" id="79e-05-N2d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kss-ss-ZYs">
+                                <rect key="frame" x="130" y="163" width="60" height="51.5"/>
+                                <state key="normal" image="34.png"/>
+                                <connections>
+                                    <action selector="send:" destination="iFt-Ha-R5Q" eventType="touchUpInside" id="zpY-s3-465"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayi-nC-ksn">
+                                <rect key="frame" x="223" y="165" width="56" height="55"/>
+                                <state key="normal" image="36.jpg"/>
+                                <connections>
+                                    <action selector="button:" destination="iFt-Ha-R5Q" eventType="touchUpInside" id="WQb-YT-Cxg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fih-TJ-0Y7">
+                                <rect key="frame" x="84" y="198" width="52" height="30"/>
+                                <state key="normal" title="保存">
+                                    <color key="titleColor" red="0.92156862750000001" green="0.0" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iWf-aH-8oI">
+                                <rect key="frame" x="51" y="89" width="228" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="text11:" destination="iFt-Ha-R5Q" eventType="editingDidEnd" id="upI-ce-A5Y"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="发送病房号" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eg1-N2-0zX">
+                                <rect key="frame" x="9" y="223" width="88" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="病房号" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RAt-im-H8n">
+                                <rect key="frame" x="51" y="127" width="228" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="67" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hsv-aU-Z77">
+                                <rect key="frame" x="0.0" y="261" width="320" height="287"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="287" id="vUl-W8-NUd"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="iFt-Ha-R5Q" id="6VQ-yP-O2A"/>
+                                    <outlet property="delegate" destination="iFt-Ha-R5Q" id="qey-po-UpP"/>
+                                </connections>
+                            </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="断开蓝牙" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2l4-ZG-8bW">
+                                <rect key="frame" x="223" y="223" width="88" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hsv-aU-Z77" firstAttribute="trailing" secondItem="JlO-og-Q6P" secondAttribute="trailing" id="BSP-WC-g1m"/>
+                            <constraint firstAttribute="bottom" secondItem="hsv-aU-Z77" secondAttribute="bottom" constant="20" symbolic="YES" id="OUX-ez-OxS"/>
+                            <constraint firstItem="hsv-aU-Z77" firstAttribute="leading" secondItem="JlO-og-Q6P" secondAttribute="leading" id="PZM-pG-zYt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="PeopleTableView" destination="hsv-aU-Z77" id="gXo-BE-WcT"/>
+                        <outlet property="insertButton" destination="fih-TJ-0Y7" id="5oB-AC-M8e"/>
+                        <outlet property="label1" destination="E7R-lH-TrX" id="uwK-v3-FW6"/>
+                        <outlet property="text" destination="iWf-aH-8oI" id="xg4-pd-nan"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p2T-go-ypV" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="17(1).jpg" width="218" height="349"/>
+        <image name="312.png" width="128" height="128"/>
+        <image name="34.png" width="128" height="128"/>
+        <image name="36.jpg" width="128" height="128"/>
+        <image name="66(1).jpg" width="147" height="93"/>
+    </resources>
+</document>
